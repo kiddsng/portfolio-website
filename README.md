@@ -1,4 +1,4 @@
-# My Portfolio Website
+# My Portfolio Website (NOT COMPLETED)
 
 A website project that showcase my personal portfolio.
 
