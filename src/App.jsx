@@ -1,38 +1,48 @@
+import { useState } from "react";
 import { BrowserRouter } from "react-router-dom"; // npm install react-router-dom
 
-import {
-    Footer,
-    Navbar,
-} from "./components";
+import { ThemeContext } from "./context/ThemeContext";
 
 import {
-    About,
-    Achievements,
-    Competitions,
-    Contact,
-    Experience,
-    Hero,
-    Projects,
+	About,
+	Achievements,
+	Competitions,
+	Contact,
+	Experience,
+	Footer,
+	Hero,
+	Navbar,
+	Projects,
 } from "./sections";
 
 const App = () => {
-    return (
-        <BrowserRouter>
-            <div className="relative z-0 bg-primary">
-                <div>
-                    <Navbar />
-                    <Hero />
-                </div>
-                    <About />
-                    <Experience />
-                    <Projects />
-                    <Competitions />
-                    <Achievements />
-                    {/* <Contact /> */}
-                    <Footer />
-            </div>
-        </BrowserRouter>
-    );
+	const [theme, setTheme] = useState(
+		window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : ""
+	);
+
+	return (
+		<BrowserRouter>
+			<ThemeContext.Provider value={theme}>
+				<div
+					className={`${
+						theme === "dark" ? "bg-black" : "bg-white"
+					} relative z-0`}
+				>
+					<div>
+						<Navbar theme={theme} setTheme={setTheme} />
+						<Hero />
+					</div>
+					<About />
+					<Experience />
+					<Projects />
+					<Competitions />
+					<Achievements />
+					{/* <Contact /> */}
+					<Footer />
+				</div>
+			</ThemeContext.Provider>
+		</BrowserRouter>
+	);
 };
 
 export default App;
