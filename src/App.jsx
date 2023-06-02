@@ -1,16 +1,19 @@
 import { BrowserRouter } from "react-router-dom"; // npm install react-router-dom
 
 import {
+    Footer,
+    Navbar,
+} from "./components";
+
+import {
     About,
     Achievements,
     Competitions,
     Contact,
     Experience,
-    Footer,
     Hero,
-    Navbar,
     Projects,
-} from "./components";
+} from "./sections";
 
 const App = () => {
     return (

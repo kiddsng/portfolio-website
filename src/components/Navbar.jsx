@@ -22,49 +22,6 @@ const Navbar = () => {
                 >
                     <p className="text-black font-bold text-[18px] cursor-pointer">Kidd Sng</p>
                 </Link>
-                <ul className="list-none hidden sm:flex flex-row gap-10">
-                    {navLinks.map((navLink) => (
-                        <li
-                            key={navLink.id}
-                            className={`${
-                                active === navLink.title
-                                ? "text-secondary"
-                                : "text-black"
-                            } font-medium text-[18px] cursor-pointer hover:text-secondary`}
-                            onClick={() => setActive(navLink.title)}
-                        >
-                        <a href={`#${navLink.id}`}>{navLink.title}</a>
-                        </li>
-                    ))}
-                </ul>
-                <div className="sm:hidden flex flex-1 justify-end items-center">
-                    <img
-                        src={toggle ? close : menu}
-                        alt="menu"
-                        className="w-[28px] h-[28px] object-contain cursor-pointer"
-                        onClick={() => setToggle(!toggle)}
-                    />
-                    <div className={`${toggle ? "flex" : "hidden"}`}>
-                        <ul className="bg-tertiary list-none flex flex-col justify-end items-start gap-4 absolute top-20 right-0 mx-4 my-2 p-6 min-w-[140px] z-10 rounded-xl">
-                        {navLinks.map((navLink) => (
-                            <li
-                            key={navLink.id}
-                            className={`${
-                                active === navLink.title
-                                ? "text-secondary"
-                                : "text-black"
-                            } text-[16px] font-medium cursor-pointer`}
-                            onClick={() => {
-                                setToggle(!toggle);
-                                setActive(navLink.title);
-                            }}
-                            >
-                            <a href={`#${navLink.id}`}>{navLink.title}</a>
-                            </li>
-                        ))}
-                        </ul>
-                    </div>
-                </div>
             </div>
         </nav>
     );
