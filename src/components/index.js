@@ -1,7 +1,5 @@
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import ThemeToggle from "./ThemeToggle";
 
 export {
-    Footer,
-    Navbar,
+    ThemeToggle,
 };
