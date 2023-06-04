@@ -14,11 +14,11 @@ const Hero = () => {
 		<motion.section
 			variants={staggerContainer()}
 			initial="hidden"
-			whileInView="show"
+			whileInView="visible"
 			viewport={{ once: true, amount: 0.25 }}
 			className={`${theme} ${styles.paddingX} mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center gap-4 py-4`}
 		>
-			<div className="mt-[10vh] flex w-full flex-col items-start gap-4 lg:flex-row">
+			<div className="mt-[10vh] flex w-full flex-col items-start gap-4 lg:flex-row lg:justify-between">
 				<HeroAside />
 				<HeroCodeSnippet />
 			</div>

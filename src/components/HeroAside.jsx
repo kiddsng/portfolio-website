@@ -30,7 +30,10 @@ const HeroAside = () => {
 					</p>
 					<p className="p-2 text-[14px] text-[#252525] dark:text-[#f5f5f5]">
 						I am{" "}
-						<span className="text-indigo-500">serving National Service</span>.
+						<span className="font-semibold text-indigo-500">
+							serving National Service
+						</span>
+						.
 					</p>
 				</div>
 				<p className="mt-2 text-[11px] font-light text-[#a8a8a8]">
