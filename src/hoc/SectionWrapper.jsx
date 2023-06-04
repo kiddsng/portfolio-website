@@ -21,7 +21,7 @@ const SectionWrapper = (WrappedComponent, idName) => {
 			<motion.section
 				variants={staggerContainer()}
 				initial="hidden"
-				whileInView="show"
+				whileInView="visible"
 				viewport={{ once: true, amount: 0.25 }}
 				className={`${theme} relative z-0 mx-auto max-w-7xl ${styles.padding}`}
 			>
