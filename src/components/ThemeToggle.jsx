@@ -2,15 +2,25 @@ const ThemeToggle = ({ theme, setTheme }) => {
 	return (
 		<div
 			className={`${
-				theme === "dark" ? "bg-slate-800" : "bg-[#ccc]"
-			} relative z-20 h-[34px] w-[60px] rounded-full`}
+				theme === "dark" ? "bg-[#303741]" : "bg-white"
+			} relative h-[34px] w-[72px] rounded-full`}
 		>
-			<span
+			<div
 				className={`${
-					theme === "dark" ? "right-[4px]" : "left-[4px]"
-				} absolute bottom-[4px] h-[26px] w-[26px] cursor-pointer rounded-full bg-white`}
+					theme === "dark"
+						? "right-[4px] bg-[#121921]"
+						: "left-[4px] bg-[#f0f1f5]"
+				} absolute bottom-[4px] flex h-[26px] w-[34px] cursor-pointer items-center justify-center rounded-full`}
 				onClick={() => setTheme(theme === "dark" ? "" : "dark")}
-			></span>
+			>
+				<i
+					className={`fa-solid ${
+						theme === "dark"
+							? "fa-cloud-moon text-white"
+							: "fa-cloud-sun text-[#252525]"
+					}`}
+				></i>
+			</div>
 		</div>
 	);
 };

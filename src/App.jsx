@@ -25,20 +25,20 @@ const App = () => {
 			<ThemeContext.Provider value={theme}>
 				<div
 					className={`${
-						theme === "dark" ? "bg-black" : "bg-white"
+						theme === "dark" ? "bg-[#121921]" : "bg-[#f0f1f5]"
 					} relative z-0`}
 				>
 					<div>
 						<Navbar theme={theme} setTheme={setTheme} />
 						<Hero />
 					</div>
-					<About />
+					{/* <About />
 					<Experience />
 					<Projects />
 					<Competitions />
 					<Achievements />
-					{/* <Contact /> */}
-					<Footer />
+					<Contact />
+					<Footer /> */}
 				</div>
 			</ThemeContext.Provider>
 		</BrowserRouter>
