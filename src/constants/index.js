@@ -1,7 +1,3 @@
-// faLinkedIn, faGitHub, faGoogleLogo { https://fontawesome.com/ }
-// https://www.flaticon.com/free-icon/linkedin_3536569
-// https://www.flaticon.com/free-icon/github_3291695
-// https://www.flaticon.com/free-icon/avatar_6543064
 import {
 	bronze,
 	gold,
@@ -16,13 +12,13 @@ import {
 
 export const greetCodeLines = [
 	"from utils import greetMessage , specialPrint , closeBrowser",
-    "",
+	"",
 	"def greet ( user ) :",
 	"if user == 'amazing' :",
 	"specialPrint ( greetMessage )",
 	"else :",
 	"closeBrowser ( )",
-    "",
+	"",
 	"greet ( user )",
 ];
 
@@ -77,7 +73,6 @@ export const resourceLinks = [
 ];
 
 const achievements = [
-	// generic badge/medal
 	{
 		title: "Director's List",
 		description: "Excellence in academic performance for overall cohort.",
@@ -141,7 +136,6 @@ const achievements = [
 ];
 
 const competitions = [
-	// images of the competition
 	{
 		name: "PolyFinTech100 API Hackathon 2022 Category Finals",
 		description:
@@ -165,7 +159,6 @@ const competitions = [
 ];
 
 const experiences = [
-	// company logo
 	{
 		title: "Research Intern",
 		company_name: "A*STAR",
@@ -180,11 +173,11 @@ const experiences = [
 ];
 
 const projects = [
-	// images of the project
 	{
 		name: "Time Series Dashboard",
 		description:
-			"Web application that allows users to perform CDA on time series datasets",
+			"A web dashboard for predicting time series data.",
+        status: "Upcoming",
 		tags: [
 			{
 				name: "python",
@@ -203,8 +196,9 @@ const projects = [
 		source_code_link: "time-series-dashboard",
 	},
 	{
-		name: "Little Lemon Restaurant",
-		description: "Website that allows users to reserve a table online",
+		name: "Little Lemon Restaurant (with React)",
+        status: "Active",
+		description: "A website for the Little Lemon restaurant (a persona) and its customers to reserve a table online.",
 		tags: [
 			{
 				name: "react",
@@ -214,13 +208,22 @@ const projects = [
 				name: "javascript",
 				color: "",
 			},
+			{
+				name: "css",
+				color: "",
+			},
+			{
+				name: "formik",
+				color: "",
+			},
 		],
 		image: tripguide,
-		source_code_link: "little-lemon-restaurant",
+		source_code_link: "little-lemon-restaurant-react",
 	},
 	{
 		name: "Portfolio Website",
-		description: "Website that allows users to view my portfolio",
+        status: "Active",
+		description: "Source code repository for my portfolio website.",
 		tags: [
 			{
 				name: "react",
@@ -231,12 +234,33 @@ const projects = [
 				color: "",
 			},
 			{
-				name: "javascript",
+				name: "tailwindcss",
+				color: "",
+			},
+			{
+				name: "framermotion",
 				color: "",
 			},
 		],
 		image: jobit,
 		source_code_link: "portfolio-website",
+	},
+	{
+		name: "Litle Lemon Restaurant (with Django)",
+        status: "Upcoming",
+		description: "Source code repository for my portfolio website.",
+		tags: [
+			{
+				name: "python",
+				color: "",
+			},
+			{
+				name: "django",
+				color: "",
+			},
+		],
+		image: tripguide,
+		source_code_link: "little-lemon-restaurant-django",
 	},
 ];
 
