@@ -1,7 +1,7 @@
 const styles = {
 	paddingX: "px-6",
 	paddingY: "sm:py-16 py-6",
-	padding: "sm:px-16 px-6 sm:py-16 py-10",
+	padding: "px-6 sm:py-16 py-10",
 	heroHeadText:
 		"text-[#252525] dark:text-[#f5f5f5] xl:text-[28px] lg:text-[24px] text-[20px] leading-loose tracking-wide mt-2",
 	heroSubText:
@@ -9,9 +9,9 @@ const styles = {
 	heroSubText2:
 		"text-secondary font-medium lg:text-[34px] sm:text-[30px] xs:text-[24px] text-[20px] lg:leading-[66px] mt-2",
 	sectionHeadText:
-		"text-black font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
+		"text-center text-[30px] font-black text-black dark:text-white xs:text-[40px] sm:text-[50px] md:text-[60px]",
 	sectionSubText:
-		"text-black-100 uppercase tracking-wider sm:text-[18px] text-[14px]",
+		"text-center text-[14px] uppercase tracking-wider text-[#a8a8a8] sm:text-[18px]",
 	heroCard: "rounded-2xl bg-white p-5 dark:bg-[#303741]",
 };
 
