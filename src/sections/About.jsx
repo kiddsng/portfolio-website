@@ -14,7 +14,7 @@ const About = () => {
 				<h2 className={`${styles.sectionHeadText}`}>About</h2>
 				<p className={`${styles.sectionSubText}`}>My introduction</p>
 			</motion.div>
-			<motion.div variants={fadeIn("", "", 0.1, 1)} className="mt-20">
+			<motion.div variants={fadeIn("", "", 0.1, 1)}>
 				<p className="mt-20 text-[18px] text-[#252525] dark:text-[#f5f5f5] sm:text-[24px]">
 					My name is Kidd Sng. I recently graduated from Temasek Polytechic with
 					a Diploma in Big Data & Analytics with Merit. I am an avid coder, and
