@@ -34,7 +34,7 @@ const About = () => {
 					or advice.{" "}
 					<span className="fa-solid fa-face-smile text-yellow-500"></span>
 				</p>
-				<div className="mt-12 flex flex-row justify-center gap-12">
+				<div className="mt-12 flex flex-row flex-wrap justify-center gap-12">
 					{technologies.map((technology) => (
 						<div className="flex h-20 w-20 items-center justify-center rounded-full bg-white dark:bg-[#303741]">
 							<img
