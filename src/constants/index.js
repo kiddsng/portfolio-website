@@ -1,13 +1,12 @@
 import {
-	bronze,
-	gold,
-	silver,
 	astar,
 	polyfintech,
 	sussanl,
-	carrent,
-	jobit,
-	tripguide,
+	css,
+	html,
+	javascript,
+	python,
+	reactjs,
 } from "../assets";
 
 export const greetCodeLines = [
@@ -43,10 +42,6 @@ export const navLinks = [
 		id: "achievements",
 		title: "Achievements",
 	},
-	// {
-	//     id: "contact",
-	//     title: "Contact",
-	// },
 ];
 
 export const socialLinks = [
@@ -78,7 +73,7 @@ const achievements = [
 		description: "Excellence in academic performance for overall cohort.",
 		associate: "Temasek Polytechnic",
 		date: "April 2022",
-		level: gold,
+		level: polyfintech,
 		imageUrl: "",
 	},
 	{
@@ -87,7 +82,7 @@ const achievements = [
 			"Top students with excellent academic performance in their diploma.",
 		associate: "Temasek Polytechnic",
 		date: "16 April 2023",
-		level: gold,
+		level: polyfintech,
 		imageUrl: "",
 	},
 	{
@@ -96,7 +91,7 @@ const achievements = [
 			"Demonstrated great abilities and enthusiasm in mathematics and research.",
 		associate: "A*STAR Graduate Academy",
 		date: "2021",
-		level: gold,
+		level: polyfintech,
 		imageUrl: "",
 	},
 	{
@@ -104,7 +99,7 @@ const achievements = [
 		description: "Top student in cohort for N(A)-Level.",
 		associate: "East Spring Secondary School",
 		date: "5 July 2019",
-		level: gold,
+		level: polyfintech,
 		imageUrl: "",
 	},
 	{
@@ -113,7 +108,7 @@ const achievements = [
 			"Well-versed and knowledgeable in AWS and its Cloud Computing services.",
 		associate: "Amazon Web Services",
 		date: "11 April 2022",
-		level: silver,
+		level: polyfintech,
 		imageUrl: "",
 	},
 	{
@@ -122,7 +117,7 @@ const achievements = [
 			"Experienced a mentorship opportunity with a distinguished worker from HashiCorp.",
 		associate: "Industry Mentors' Network",
 		date: "October 2021 - March 2022",
-		level: bronze,
+		level: polyfintech,
 		imageUrl: "",
 	},
 	{
@@ -130,7 +125,7 @@ const achievements = [
 		associate: "SASMO",
 		description: "Attained Bronze level in the SASMO competition.",
 		date: "7 May 2018",
-		level: bronze,
+		level: polyfintech,
 		imageUrl: "",
 	},
 ];
@@ -175,9 +170,8 @@ const experiences = [
 const projects = [
 	{
 		name: "Time Series Dashboard",
-		description:
-			"A web dashboard for predicting time series data.",
-        status: "Upcoming",
+		description: "A web dashboard for predicting time series data.",
+		status: "Upcoming",
 		tags: [
 			{
 				name: "python",
@@ -192,13 +186,14 @@ const projects = [
 				color: "",
 			},
 		],
-		image: carrent,
+		image: polyfintech,
 		source_code_link: "time-series-dashboard",
 	},
 	{
 		name: "Little Lemon Restaurant (with React)",
-        status: "Active",
-		description: "A website for the Little Lemon restaurant (a persona) and its customers to reserve a table online.",
+		status: "Active",
+		description:
+			"A website for the Little Lemon restaurant (a persona) and its customers to reserve a table online.",
 		tags: [
 			{
 				name: "react",
@@ -217,12 +212,12 @@ const projects = [
 				color: "",
 			},
 		],
-		image: tripguide,
+		image: polyfintech,
 		source_code_link: "little-lemon-restaurant-react",
 	},
 	{
 		name: "Portfolio Website",
-        status: "Active",
+		status: "Active",
 		description: "Source code repository for my portfolio website.",
 		tags: [
 			{
@@ -242,12 +237,12 @@ const projects = [
 				color: "",
 			},
 		],
-		image: jobit,
+		image: polyfintech,
 		source_code_link: "portfolio-website",
 	},
 	{
 		name: "Litle Lemon Restaurant (with Django)",
-        status: "Upcoming",
+		status: "Upcoming",
 		description: "Source code repository for my portfolio website.",
 		tags: [
 			{
@@ -259,9 +254,32 @@ const projects = [
 				color: "",
 			},
 		],
-		image: tripguide,
+		image: polyfintech,
 		source_code_link: "little-lemon-restaurant-django",
 	},
 ];
 
-export { achievements, competitions, experiences, projects };
+const technologies = [
+	{
+		name: "css",
+		icon: css,
+	},
+	{
+		name: "html",
+		icon: html,
+	},
+	{
+		name: "javascript",
+		icon: javascript,
+	},
+	{
+		name: "python",
+		icon: python,
+	},
+	{
+		name: "reactjs",
+		icon: reactjs,
+	},
+];
+
+export { achievements, competitions, experiences, projects, technologies };
